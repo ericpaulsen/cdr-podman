@@ -1,0 +1,25 @@
+version: "0.2"
+workspace:
+  specs:
+    kubernetes:
+      image:
+        value: index.docker.io/ericpaulsen/podman:ubuntu
+      container-based-vm:
+        value: false
+      cpu:
+        value: 4
+      memory:
+        value: 8
+      disk:
+        value: 16
+      gpu-count:
+        value: 0
+      resource-requests:
+        policy: write
+        value:
+          smarter-devices/fuse: "1"
+      resource-limits:
+        policy: write
+        value:
+          smarter-devices/fuse: "1"
+

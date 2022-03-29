@@ -4,7 +4,7 @@ workspace:
   specs:
     kubernetes:
       image:
-        value: index.docker.io/ericpaulsen/podman:v3
+        value: index.docker.io/ericpaulsen/podman:ubuntu
       container-based-vm:
         value: false
       cpu:

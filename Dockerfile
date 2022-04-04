@@ -10,4 +10,6 @@ RUN source /etc/os-release && \
     apt-get update && \
     apt-get -y install podman
 
+COPY [ "configure", "/coder/configure" ]
+
 USER coder

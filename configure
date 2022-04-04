@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ ! -d "/etc/containers/storage.conf" ]
+then
+cp storage.conf /etc/containers/storage.conf
+fi
